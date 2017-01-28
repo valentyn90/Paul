@@ -1,5 +1,7 @@
 // Google Fonts
 @import url('https://fonts.googleapis.com/css?family=Raleway|Roboto');
+@import url('https://fonts.googleapis.com/css?family=Raleway:600,700,800');
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
 
 /*
  * Universal colours for links, unless overriden
@@ -46,7 +48,6 @@ h1 {
 	@extend %h;
 	font-size: $font-size-h1;
 	padding-bottom: 10px;
-	border-bottom: 1px dotted #f1f1f1;
 }
 
 h2 {

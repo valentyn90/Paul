@@ -18,7 +18,7 @@
   ],
   "dependencies": {
     "bootstrap"     : "4.0.0-alpha",
-    "font-awesome"  : "4.5.0",
+    "font-awesome"  : "4.7.0",
     "include-media" : "1.4.4"
   },
   "devDependencies": {}

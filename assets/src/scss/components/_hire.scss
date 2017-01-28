@@ -1,0 +1,27 @@
+#hire-me {
+	padding-top: 119px;
+	font-family: 'Roboto', sans-serif;
+	
+	.desc {
+		h4 {
+			font-size: 18px;
+			color: rgba(0, 0, 0, 0.702);
+			font-weight: bold;
+			line-height: 1.556;
+			text-align: left;
+			margin-bottom: 43px;
+		}
+
+		p {
+			font-size: 16px;
+			color: rgba(0, 0, 0, 0.702);
+			line-height: 1.751;
+			text-align: left;
+		}
+
+		.btn-paul {
+			@include btn-paul;
+			margin-top: 68px;
+		}
+	}
+}
