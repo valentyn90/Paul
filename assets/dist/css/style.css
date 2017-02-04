@@ -710,3 +710,97 @@ table.table tr th {
   margin-right: -4px; 
   margin-left: 20px;
 }
+
+#portfolio div, #portfolio div::before, #portfolio div::after,
+#portfolio img,
+#portfolio span {
+  -webkit-transition: all .2s;
+       -o-transition: all .2s;
+          transition: all .2s;
+}
+
+#portfolio img {
+  display: block; 
+  width: 100%;
+  height: auto;
+}
+
+#portfolio div {
+  position: relative;
+  float: left;
+  width: 33%;
+  margin: 0 1px 1px 0;
+  overflow: hidden;
+}
+
+#portfolio div:hover img {
+  -webkit-transform: scale(1.25);
+      -ms-transform: scale(1.25);
+       -o-transform: scale(1.25);
+          transform: scale(1.25);
+}
+
+#portfolio div:hover span {
+  opacity: 1;
+}
+
+#portfolio div::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1; 
+  content: "";
+}
+
+#portfolio div:hover::before {
+  -webkit-backdrop-filter: blur(10px) saturate(120%);
+          backdrop-filter: blur(10px) saturate(120%);
+}
+
+#portfolio div::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 2;
+  width: 75px;
+  height: 75px;
+  content: "";
+  border: 1px solid #fff;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, .35), 0 0 4px rgba(0, 0, 0, .35) inset;
+          box-shadow: 0 0 4px rgba(0, 0, 0, .35), 0 0 4px rgba(0, 0, 0, .35) inset;
+  opacity: 0; 
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+       -o-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+#portfolio div:hover::after {
+  opacity: 1;
+}
+
+#portfolio span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 3;
+  font: bold 14px sans-serif; 
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 0 4px rgba(0, 0, 0, .65);
+  text-transform: uppercase;
+  opacity: 0;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+       -o-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+@media screen and (min-width: 760px) {
+  #portfolio div {
+    width: calc(25% - 1px);
+  }
+}
