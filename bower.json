@@ -17,9 +17,11 @@
     "vendor"
   ],
   "dependencies": {
-    "bootstrap"     : "4.0.0-alpha",
-    "font-awesome"  : "4.7.0",
-    "include-media" : "1.4.4"
+    "bootstrap": "4.0.0-alpha",
+    "font-awesome": "4.7.0",
+    "include-media": "1.4.4",
+    "zoomwall": "^1.1.1",
+    "hover": "^2.1.0"
   },
   "devDependencies": {}
 }

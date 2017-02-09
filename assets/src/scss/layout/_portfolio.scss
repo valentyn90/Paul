@@ -1,82 +1,16 @@
 #portfolio {
-  div, div::before, div::after,
-img,
-span {
-  -webkit-transition: all 0.2s;
-  transition: all 0.2s;
-}
+	padding: 125px 0;
 
-img {
-  height: auto;
-  width: 100%;
-  display: block;
-}
-
-div {
-  width: 33%;
-  margin: 0 1px 1px 0;
-  float: left;
-  position: relative;
-  overflow: hidden;
-}
-div:hover img {
-  -webkit-transform: scale(1.25);
-          transform: scale(1.25);
-}
-div:hover span {
-  opacity: 1;
-}
-div::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 1;
-}
-div:hover::before {
-  -webkit-backdrop-filter: blur(10px) saturate(120%);
-          backdrop-filter: blur(10px) saturate(120%);
-}
-div::after {
-  content: "";
-  border: 1px solid #fff;
-  border-radius: 50%;
-  box-shadow: 0 0px 4px rgba(0, 0, 0, 0.35), 0 0px 4px rgba(0, 0, 0, 0.35) inset;
-  height: 75px;
-  width: 75px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  z-index: 2;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  opacity: 0;
-}
-div:hover::after {
-  opacity: 1;
-}
-
-span {
-  color: #fff;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  z-index: 3;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  opacity: 0;
-  text-align: center;
-  text-transform: uppercase;
-  text-shadow: 0 0 4px rgba(0, 0, 0, 0.65);
-  font: bold 14px sans-serif;
-}
-
-@media screen and (min-width: 760px) {
-  div {
-    width: calc(25% - 1px);
-  }
-}
-
+	h1 {
+		@include heading-font;
+		margin: 0;
+	}
+	h6 {
+		font-size: 16px;
+		font-family: 'Roboto', sans-serif;
+		color: rgba(0, 0, 0, 0.702);
+		line-height: 1.751;
+		text-align: center;
+		margin-bottom: 46px;
+	}
 }

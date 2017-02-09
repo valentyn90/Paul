@@ -1,0 +1,118 @@
+#contact {
+	background-image: linear-gradient(270deg, #00D7B9, #B95DD7 50%, #FFB367 100%);
+	padding: 125px 0;
+	text-align: left;
+
+	.contact-form {
+		background: #e96443; /* fallback for old browsers */
+		background: -webkit-linear-gradient(to left, #e96443 , #904e95); /* Chrome 10-25, Safari 5.1-6 */
+		background: linear-gradient(to left, #e96443 , #904e95); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+		padding: 60px 40px 150px;
+		color: #fff;
+
+		h3 {
+			font-size: 26px;
+			font-family: 'Raleway', sans-serif;
+			color: rgb(255, 255, 255);
+			font-weight: bold;
+			text-transform: uppercase;
+			line-height: 1.077;
+			margin-top: 0;
+			margin-bottom: 30px;
+		}
+
+		.form-group {
+
+			.form-control {
+				border-radius: 0;
+			}
+		}
+
+		.btn-paul {
+			@include btn-paul;
+			margin-top: 30px;
+			float: right;
+			transition: background-color 300ms ease-in;
+
+			&:hover {
+				background: #1e3c72; /* fallback for old browsers */
+				background: -webkit-linear-gradient(to left, #1e3c72 , #2a5298); /* Chrome 10-25, Safari 5.1-6 */
+				background: linear-gradient(to left, #1e3c72 , #2a5298); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+			}
+		}
+	}
+
+	.address {
+		background: #2C3E50; /* fallback for old browsers */
+		background: -webkit-linear-gradient(to left, #2C3E50 , #FD746C); /* Chrome 10-25, Safari 5.1-6 */
+		background: linear-gradient(to left, #2C3E50 , #FD746C); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+		padding: 50px 40px;
+		margin-bottom: 18px;
+		color: #fff;
+
+		address {
+			margin-bottom: 0;
+			font-size: 16px;
+			font-family: 'Roboto', sans-serif;
+			color: rgba(255, 255, 255, 0.702);
+			line-height: 1.876;
+		}
+
+		h3 {
+			margin-top: 0;
+			font-size: 26px;
+			font-family: 'Raleway', sans-serif;
+			color: rgb(255, 255, 255);
+			font-weight: bold;
+			text-transform: uppercase;
+			line-height: 1.077;
+		}
+	}
+
+	.phone {
+		background: #2C3E50; /* fallback for old browsers */
+		background: -webkit-linear-gradient(to left, #2C3E50 , #FD746C); /* Chrome 10-25, Safari 5.1-6 */
+		background: linear-gradient(to left, #2C3E50 , #FD746C); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+		padding: 50px 40px;
+		margin-bottom: 18px;
+		font-size: 16px;
+		font-family: 'Roboto', sans-serif;
+		color: rgba(255, 255, 255, 0.702);
+		line-height: 1.876;
+		
+		h3 {
+			margin-top: 0;
+			font-size: 26px;
+			font-family: 'Raleway', sans-serif;
+			color: rgb(255, 255, 255);
+			font-weight: bold;
+			text-transform: uppercase;
+			line-height: 1.077;
+		}
+	}
+
+	.web {
+		background: #2C3E50; /* fallback for old browsers */
+		background: -webkit-linear-gradient(to left, #2C3E50 , #FD746C); /* Chrome 10-25, Safari 5.1-6 */
+		background: linear-gradient(to left, #2C3E50 , #FD746C); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+		padding: 50px 40px;
+
+		h3 {
+			margin-top: 0;
+			font-size: 26px;
+			font-family: 'Raleway', sans-serif;
+			color: rgb(255, 255, 255);
+			font-weight: bold;
+			text-transform: uppercase;
+			line-height: 1.077;
+		}
+
+		a {
+			font-size: 16px;
+			font-family: 'Roboto', sans-serif;
+			color: rgba(255, 255, 255, 0.702);
+			line-height: 1.876;
+		}
+	}
+
+}

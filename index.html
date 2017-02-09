@@ -39,37 +39,52 @@
     <meta property="og:audio" content="">
     <meta property="og:video" content="">
 
-    <title>Paul Lapkin</title>
+    <title>Hussain Sumrat</title>
 	
 	<link href="assets/vendor/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css">
     <link href="assets/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="assets/vendor/zoomwall/zoomwall.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.transitions.css">
+    <link rel="stylesheet" type="text/css" href="assets/vendor/hover/css/hover-min.css">
     <link rel="stylesheet" href="assets/dist/css/style.min.css" type="text/css" />
+
 </head>
 
 <body>
     <div class="body-container">
         <section id="intro">
-            <a href="#nowhere" class="navicon"></a>
-            <div class="toggle">
-              <ul class="toggle__menu">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contacts</a></li>
-                <li><a href="#"><span>..and more</span></a></li>
-              </ul>
-              <ul class="social">
-                <li><a href="https://github.com/Kirbaba"><i class="fa fa-github"></i></a></li>
-                <li><a href="https://twitter.com/VladKirbaba"><i class="fa fa-twitter"></i></a></li>
-               <li> <a href="https://www.facebook.com/VladislavKirbaba"><i class="fa fa-facebook"></i></a></li>
-                <li><a href="https://vk.com/vladislavkirbaba"> <i class="fa fa-vk"></i></a></li>
-              </ul>
-            </div>
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6 col-md-offset-3 col-sm-12">
+                <a id="menu-toggle" href="#" class="btn btn-dark toggle"><i class="fa fa-bars fa-2x"></i></a>
+            <nav id="sidebar-wrapper">
+                <ul class="sidebar-nav">
+                    <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
+                    <li class="sidebar-brand">
+                        <a href="#top" onclick=$("#menu-close").click();>Hussain Sumrat</a>
+                    </li>
+                    <li>
+                        <a href="#top" onclick=$("#menu-close").click();>Home</a>
+                    </li>
+                    <li>
+                        <a href="#about" onclick=$("#menu-close").click();>About</a>
+                    </li>
+                    <li>
+                        <a href="#services" onclick=$("#menu-close").click();>Services</a>
+                    </li>
+                    <li>
+                        <a href="#portfolio" onclick=$("#menu-close").click();>Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="#contact" onclick=$("#menu-close").click();>Contact</a>
+                    </li>
+                </ul>
+            </nav>
+                    <div class="col-md-8 col-md-offset-2 col-sm-12">
                         <div class="intro">
-                            <h1>paul lapkin</h1>
-                            <p>#user experience #music #creative direction</p>
+                            <h1>Hussain Sumrat</h1>
+                            <p>#user experience #frontend #creative direction</p>
                         </div>
                     </div>
                 </div>
@@ -85,13 +100,13 @@
                     </div>
                     <div class="col-md-7">
                         <div class="desc">
-                            <h4>Hi, i’m Paul Lapkin, Experience Crafter from Canada.</h4>
+                            <h4>Hi, i’m Hussain Sumrat, come from the future.</h4>
                             <p>
                                 Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquipex ea commodo consequat. <br> <br>
 
                                 Duis autem vel eum iriure dolorin hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore.
                             </p>
-                            <a href="#" class="btn btn-paul"> hire me!</a>
+                            <a href="#" class="btn btn-paul hvr-icon-grow"> hire me!</a>
                         </div>
                     </div>
                 </div>
@@ -105,30 +120,34 @@
                 <div class="row">
                     <div class="col-md-12 text-center">
                         <h1>my working process</h1>
-                        <h5>Hi, i’m Paul Lapkin, Experience Crafter from Canada.</h5>
+                        <h5>Hi, i’m Hussain Sumrat, come from the future.</h5>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-3">
-                        <div class="square">
-                            <i class="fa fa-television fa-3x" aria-hidden="true"></i>
-                            <h5>design</h5>
+                        <div data-tilt>
+                            <div class="square">
+                                <i class="fa fa-television fa-3x" aria-hidden="true"></i>
+                                <h5>design</h5>
+                            </div>
                         </div>
                     </div>
                     <div class="col-md-3">
-                        <div class="square2">
+                        <div class="square2" data-tilt>
                             <i class="fa fa-free-code-camp fa-3x" aria-hidden="true"></i>
                             <h5>development</h5>
                         </div>
                     </div>
                     <div class="col-md-3">
-                        <div class="square3">
-                            <i class="fa fa-deaf fa-3x" aria-hidden="true"></i>
-                            <h5>testing</h5>
+                        <div data-tilt>
+                            <div class="square3">
+                                <i class="fa fa-deaf fa-3x" aria-hidden="true"></i>
+                                <h5>testing</h5>
+                            </div>
                         </div>
                     </div>
                     <div class="col-md-3">
-                        <div class="square4">
+                        <div class="square4" data-tilt>
                             <i class="fa fa-plane fa-3x" aria-hidden="true"></i>
                             <h5>launch</h5>
                         </div>
@@ -183,26 +202,143 @@
 
         <!-- Latest works -->
         <section id="portfolio">
-            <div><img src="http://unsplash.it/620?image=0"><span>Send</span></div>
-            <div><img src="http://unsplash.it/620?image=10"><span>Send</span></div>
-            <div><img src="http://unsplash.it/620?image=20"><span>Send</span></div>
-            <div><img src="http://unsplash.it/620?image=30"><span>Send</span></div>
-            <div><img src="http://unsplash.it/620?image=40"><span>Send</span></div>
-            <div><img src="http://unsplash.it/620?image=50"><span>Send</span></div>
-            <div><img src="http://unsplash.it/620?image=60"><span>Send</span></div>
-            <div><img src="http://unsplash.it/620?image=70"><span>Send</span></div>
-            <div><img src="http://unsplash.it/620?image=80"><span>Send</span></div>
-            <div><img src="http://unsplash.it/620?image=90"><span>Send</span></div>
-            <div><img src="http://unsplash.it/620?image=100"><span>Send</span></div>
-            <div><img src="http://unsplash.it/620?image=110"><span>Send</span></div>
+            <div class="container">
+                <div class="row">
+                    <h1>my latest works</h1>
+                    <h6>hi, i'm paul lapkin, experience crafter from canada</h6>
+                    <div id="gallery" class="zoomwall">
+                        <img src="https://unsplash.it/1200/768.jpg?image=251" data-highres="https://unsplash.it/600.jpg?image=251" />
+                        <img src="https://unsplash.it/1200/768.jpg?image=252" data-highres="https://unsplash.it/600.jpg?image=252" />
+                        <img src="https://unsplash.it/1200/768.jpg?image=253" data-highres="https://unsplash.it/600.jpg?image=253" />
+                        <img src="https://unsplash.it/1200/768.jpg?image=254" data-highres="https://unsplash.it/600.jpg?image=254" />
+                        <img src="https://unsplash.it/1200/768.jpg?image=255" data-highres="https://unsplash.it/600.jpg?image=255" />
+                        <img src="https://unsplash.it/1200/768.jpg?image=256" data-highres="https://unsplash.it/600.jpg?image=256" />
+                    </div>
+                </div>
+            </div>
         </section>
-        <!-- End latest works -->
+        <!-- End latest works https://codyhouse.co/gem/client-testimonials-carousel -->
+
+        <!-- Testimonial -->
+        <section id="testimonial-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div id="testimonial-slider" class="owl-carousel">
+                            <div class="testimonial">
+                                <div class="pic">
+                                    <img src="assets/dist/img/testimonial.jpg" alt="">
+                                </div>
+                                <div class="testimonial-content">
+                                    <p class="description">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquam amet animi blanditiis consequatur debitis dicta distinctio, enim error eum iste libero modi nam natus perferendis possimus quasi sint sit tempora voluptatem. Est, exercitationem id ipsa ipsum laboriosam perferendis temporibus!
+                                    </p>
+                                    <h3 class="testimonial-title">Williamson
+                                        <small class="post">Web Developer</small>
+                                    </h3>
+                                </div>
+                            </div>
+             
+                            <div class="testimonial">
+                                <div class="pic">
+                                    <img src="assets/dist/img/testimonial.jpg" alt="">
+                                </div>
+                                <div class="testimonial-content">
+                                    <p class="description">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquam amet animi blanditiis consequatur debitis dicta distinctio, enim error eum iste libero modi nam natus perferendis possimus quasi sint sit tempora voluptatem. Est, exercitationem id ipsa ipsum laboriosam perferendis temporibus!
+                                    </p>
+                                    <h3 class="testimonial-title">kristiana
+                                        <small class="post">Web Designer</small>
+                                    </h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Testimonial -->
+
+        <!-- Contact -->
+        <section id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="contact-form">
+                            <form>
+                                <h3>leave a message</h3>
+                                <div class="form-group">
+                                    <label for="name">Name</label>
+                                    <input type="text" class="form-control" id="name" aria-describedby="name" placeholder="Enter name">
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email id</label>
+                                    <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+                                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                                </div>
+                                <div class="form-group">
+                                    <label for="name">Subject</label>
+                                    <input type="text" class="form-control" id="name" aria-describedby="subject" placeholder="Subject">
+                                </div>
+                                <div class="form-group">
+                                    <label for="textarea">Your Message</label>
+                                    <textarea class="form-control" id="textarea" rows="5"></textarea>
+                                </div>
+                                <button class="btn btn-paul hvr-icon-wobble-horizontal">hire me!</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="address">
+                            <h3>address</h3>
+                            <address>
+                                 Road # 30, House # 438, Floor # 5th,<br> 
+                                 DOHS Mohakhali Dhaka-1206, Bangladesh.
+                            </address>
+                        </div>
+                        <div class="phone">
+                            <h3>phone</h3>
+                            +880 1681 175864 <br>
+                            +880 1558 683592
+                        </div>
+                        <div class="web">
+                            <h3>phone</h3>
+                            <a href="mailto:itsumrat@gmail.com" target="_top">Email: itsumrat@gmail.com</a> <br>
+                            <a href="https://www.linkedin.com/in/hussainsumrat">Linkedin: Hussain Sumrat</a> <br>
+                            <a href="http://spark-bit.club" target="_blank">Web: Spark bit</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Contact -->
+
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="social-link">
+                            <ul>
+                                <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-behance" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-globe" aria-hidden="true"></i></a></li>
+                            </ul>
+                        </div>
+                        <p>Hussain Sumrat, All right reserved</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
 
     </div>
 
   <script src="assets/vendor/jquery/dist/jquery.min.js" type="text/javascript"></script> 
   <script src="assets/vendor/bootstrap/dist/js/bootstrap.min.js" type="text/javascript"></script>
-  <script type="text/javascript" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/45226/material-photo-gallery.min.js"></script>
+  <script src="node_modules/tilt.js/src/tilt.jquery.js" type="text/javascript"></script>
+  <script type="text/javascript" src="assets/vendor/zoomwall/zoomwall.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
   <script type="text/javascript" src="assets/src/js/app.js"></script>
 </body>
 </html>

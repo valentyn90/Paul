@@ -4,10 +4,5 @@
  */
 
 .body-container {
-	@include make-container;
 	max-width: $body-max-width;
-
-	@include media("<sm") {
-		padding: 0;
-	} 
 }
