@@ -12,22 +12,20 @@ Copyright 2015-2015 Saddam Azad
 @import url("https://fonts.googleapis.com/css?family=Raleway:600,700,800");
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,700");
 #intro {
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   width: 100%;
-  height: 100vh;
-  height: 100vh;
-  background: url("../img/intro.jpeg"), -webkit-linear-gradient(217deg, #e56420, #c22525, #3d9c31, #37bbde);
-  background: url("../img/intro.jpeg"), -o-linear-gradient(217deg, #e56420, #c22525, #3d9c31, #37bbde);
-  background: url("../img/intro.jpeg"), linear-gradient(233deg, #e56420, #c22525, #3d9c31, #37bbde);
-  -webkit-background-size: cover;
-          background-size: cover;
-  -webkit-animation: hue-rotate 3s linear infinite;
-       -o-animation: hue-rotate 3s linear infinite;
-          animation: hue-rotate 3s linear infinite; 
-
-  background-blend-mode: hard-light;
+  height: 100vh; 
+  background: #73c8a9;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #73c8a9, #373b44);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, right top, left top, from(#73c8a9), to(#373b44));
+  background: -webkit-linear-gradient(right, #73c8a9, #373b44);
+  background:      -o-linear-gradient(right, #73c8a9, #373b44);
+  background:         linear-gradient(to left, #73c8a9, #373b44);
 }
 #intro .intro {
-  padding: 11rem 0; 
+  padding: 13rem 0; 
   text-align: center;
 }
 #intro .intro .fa-bars {
@@ -42,74 +40,75 @@ Copyright 2015-2015 Saddam Azad
   padding-top: 10px;
   margin-bottom: 0; 
   font-family: 'Raleway', sans-serif;
-  font-size: 50px;
+  font-size: 30px;
+  font-size: 1.875rem;
   font-weight: 900;
   line-height: 1.308;
   color: white;
   text-align: center;
   text-transform: uppercase;
-  letter-spacing: 8px;
   border-top: 2px solid #f4f4f4;
   border-bottom: 2px solid #f4f4f4;
 }
+@media screen and (min-width: 48em) and (max-width: 62em) {
+  #intro .intro h1 {
+    font-size: 50px;
+    font-size: 3.125rem;
+  }
+}
+@media (min-width: 34.01em) {
+  #intro .intro h1 {
+    font-size: 40px;
+    font-size: 2.5rem;
+    letter-spacing: 8px;
+  }
+}
+@media screen and (min-width: 48em) {
+  #intro .intro h1 {
+    font-size: 38px;
+    font-size: 2.375rem;
+  }
+}
+@media screen and (min-width: 62em) {
+  #intro .intro h1 {
+    font-size: 64px;
+    font-size: 4rem;
+    letter-spacing: 8px;
+  }
+}
 #intro .intro p {
   font-family: 'Roboto', sans-serif;
-  font-size: 25px;
-  line-height: 3;
+  font-size: 13px;
+  font-size: .8125rem;
+  line-height: 2;
   color: rgba(255, 255, 255, .702);
   text-align: center; 
   text-transform: capitalize;
 }
-
-@-webkit-keyframes hue-rotate {
-  from {
-            filter: hue-rotate(0); 
-
-    -webkit-filter: hue-rotate(0);
-       -moz-filter: hue-rotate(0);
-        -ms-filter: hue-rotate(0);
+@media (min-width: 34.01em) {
+  #intro .intro p {
+    font-size: 25px;
+    font-size: 1.5625rem;
+    line-height: 3;
   }
-  to {
-            filter: hue-rotate(360deg); 
-
-    -webkit-filter: hue-rotate(360deg);
-       -moz-filter: hue-rotate(360deg);
-        -ms-filter: hue-rotate(360deg);
+}
+@media screen and (min-width: 48em) {
+  #intro .intro p {
+    font-size: 30px;
+    font-size: 1.875rem;
+    line-height: 2;
+  }
+}
+@media screen and (min-width: 62em) {
+  #intro .intro p {
+    font-size: 32px;
+    font-size: 2rem;
   }
 }
 
-@-o-keyframes hue-rotate {
-  from {
-            filter: hue-rotate(0); 
-
-    -webkit-filter: hue-rotate(0);
-       -moz-filter: hue-rotate(0);
-        -ms-filter: hue-rotate(0);
-  }
-  to {
-            filter: hue-rotate(360deg); 
-
-    -webkit-filter: hue-rotate(360deg);
-       -moz-filter: hue-rotate(360deg);
-        -ms-filter: hue-rotate(360deg);
-  }
-}
-
-@keyframes hue-rotate {
-  from {
-            filter: hue-rotate(0); 
-
-    -webkit-filter: hue-rotate(0);
-       -moz-filter: hue-rotate(0);
-        -ms-filter: hue-rotate(0);
-  }
-  to {
-            filter: hue-rotate(360deg); 
-
-    -webkit-filter: hue-rotate(360deg);
-       -moz-filter: hue-rotate(360deg);
-        -ms-filter: hue-rotate(360deg);
-  }
+.logo {
+  float: left;
+  margin-top: 1rem;
 }
 
 /* Side Menu */
@@ -120,7 +119,15 @@ Copyright 2015-2015 Saddam Azad
   width: 250px;
   height: 100%;
   overflow-y: auto;
-  background: #222;
+  background: #232526;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #232526, #414345);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, right top, left top, from(#232526), to(#414345));
+  background: -webkit-linear-gradient(right, #232526, #414345);
+  background:      -o-linear-gradient(right, #232526, #414345);
+  background:         linear-gradient(to left, #232526, #414345);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   -webkit-transition: all .9s ease 0s;
        -o-transition: all .9s ease 0s;
           transition: all .9s ease 0s; 
@@ -245,6 +252,16 @@ Copyright 2015-2015 Saddam Azad
        -o-transition: background-color 300ms ease-in;
           transition: background-color 300ms ease-in;
 }
+@media (max-width: 33.99em) {
+  #hire-me .desc .btn-paul {
+    margin-top: 40px;
+  }
+}
+@media screen and (min-width: 48em) {
+  #hire-me .desc .btn-paul {
+    margin-top: 38px;
+  }
+}
 #hire-me .desc .btn-paul:hover {
   background: #1e3c72;
   /* fallback for old browsers */
@@ -255,6 +272,16 @@ Copyright 2015-2015 Saddam Azad
   background:      -o-linear-gradient(right, #1e3c72, #2a5298);
   background:         linear-gradient(to left, #1e3c72, #2a5298);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+@media screen and (min-width: 48em) {
+  #hire-me img {
+    height: 67vh;
+  }
+}
+@media (max-width: 33.99em) {
+  #hire-me {
+    padding: 40px 0;
+  }
 }
 
 #working-process {
@@ -273,6 +300,11 @@ Copyright 2015-2015 Saddam Azad
   color: black;
   text-transform: capitalize;
 }
+@media screen and (max-width: 375px) {
+  #working-process h1 {
+    font-size: 30px;
+  }
+}
 #working-process h5 {
   padding-bottom: 69px;
   margin-top: 1rem; 
@@ -281,49 +313,53 @@ Copyright 2015-2015 Saddam Azad
   line-height: 1.751;
   color: rgba(0, 0, 0, .702);
 }
+@media (max-width: 47.99em) {
+  #working-process h5 {
+    padding-bottom: 50px;
+  }
+}
 #working-process .square {
   width: 270px;
   height: 270px;
   padding: 87px;
   color: #fff;
-  text-transform: uppercase; 
-  background-color: #10c6fc;
+  text-transform: uppercase;
 }
 #working-process .square h5 {
   color: #fff;
 }
+@media screen and (max-width: 48em) {
+  #working-process .square {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 61.99em) {
+  #working-process .square {
+    margin-bottom: 20px;
+  }
+}
+@media screen and (min-width: 62em) and (max-width: 75em) {
+  #working-process .square {
+    width: 230px;
+  }
+}
+#working-process .square1 {
+  background-color: #10c6fc;
+}
 #working-process .square2 {
-  width: 270px;
-  height: 270px;
-  padding: 87px;
-  color: #fff;
-  text-transform: uppercase; 
   background-color: #835aeb;
 }
-#working-process .square2 h5 {
-  color: #fff;
-}
 #working-process .square3 {
-  width: 270px;
-  height: 270px;
-  padding: 87px;
-  color: #fff;
-  text-transform: uppercase; 
   background-color: #002453;
 }
-#working-process .square3 h5 {
-  color: #fff;
-}
 #working-process .square4 {
-  width: 270px;
-  height: 270px;
-  padding: 87px;
-  color: #fff;
-  text-transform: uppercase; 
   background-color: #ff2b4a;
 }
-#working-process .square4 h5 {
-  color: #fff;
+@media (max-width: 47.99em) {
+  #working-process {
+    padding: 50px 0;
+  }
 }
 
 #experience {
@@ -379,6 +415,11 @@ Copyright 2015-2015 Saddam Azad
   margin: 2rem 0; 
   background-color: #62657d;
 }
+@media (max-width: 61.99em) {
+  #experience .work {
+    margin-bottom: 20px;
+  }
+}
 #experience .education {
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   padding: 50px 40px;
@@ -422,7 +463,7 @@ Copyright 2015-2015 Saddam Azad
 
 body {
   font-family: 'Roboto', sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   -webkit-hyphens: auto;
      -moz-hyphens: auto;
           hyphens: auto;
@@ -622,7 +663,7 @@ footer .social-link p {
 
 .testimonial .pic img {
   width: 100%;
-  height: auto;
+  height: 100%;
 }
 
 .testimonial .description {
@@ -768,6 +809,11 @@ footer .social-link p {
   background:      -o-linear-gradient(right, #1e3c72, #2a5298);
   background:         linear-gradient(to left, #1e3c72, #2a5298);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+@media (max-width: 47.99em) {
+  #contact .contact-form {
+    margin-bottom: 20px;
+  }
 }
 #contact .address {
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */

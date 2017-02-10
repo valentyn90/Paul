@@ -27,6 +27,16 @@
 			margin-top: 68px;
 			transition: background-color 300ms ease-in;
 
+			// Below 34em (544px)
+		    @include media("<sm") {
+		        margin-top: 40px;
+		    }
+
+			// Anything above 48em (768px)
+		    @media screen and (min-width: 48em) {
+		        margin-top: 38px;
+		    }
+
 			&:hover {
 				background: #1e3c72; /* fallback for old browsers */
 				background: -webkit-linear-gradient(to left, #1e3c72 , #2a5298); /* Chrome 10-25, Safari 5.1-6 */
@@ -34,6 +44,19 @@
 			}
 		}
 	}
+
+
+	// Anything above 48em (768px)
+    @media screen and (min-width: 48em) {
+        img {
+        	height: 67vh;
+        }
+    }
+
+    // Below 34em (544px)
+    @include media("<sm") {
+        padding: 40px 0;
+    }
 }
 
 

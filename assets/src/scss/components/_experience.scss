@@ -39,6 +39,11 @@
 			background-color: #62657d;
 			margin: 2rem 0;
 		}
+
+		// Below 62em (992px)
+		@include media("<lg") {
+			margin-bottom: 20px;
+		}
 	}
 
 	.education {

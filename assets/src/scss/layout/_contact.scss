@@ -40,6 +40,11 @@
 				background: linear-gradient(to left, #1e3c72 , #2a5298); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 			}
 		}
+
+		// Below 48em (768px)
+		@include media("<md") {
+			margin-bottom: 20px;		 
+		}
 	}
 
 	.address {

@@ -1,15 +1,13 @@
 #intro {
-	height: 100vh;
-    background:url('../img/intro.jpeg'),linear-gradient(233deg, #e56420, #c22525, #3d9c31, #37bbde);
+    background: #73C8A9; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #73C8A9 , #373B44); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #73C8A9 , #373B44); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     width:100%;
     height:100vh;
-    background-size:cover;
-    background-blend-mode: hard-light;
-    animation: hue-rotate 3s linear infinite;
 
 	.intro {
         text-align: center;
-        padding: 11rem 0;
+        padding: 13rem 0;
 
         .fa-bars {
             color: #fff;
@@ -21,7 +19,7 @@
         }
 	    
 		h1 {
-			font-size: 50px;
+			@include font-size(30px)
 			font-family: 'Raleway', sans-serif;
 			font-weight: 900;
 			color: rgb(255, 255, 255);
@@ -29,41 +27,63 @@
 			line-height: 1.308;
 			padding-top: 10px;
 			text-align: center;
-			letter-spacing: 8px;
 			border-top: 2px solid #f4f4f4;
 			border-bottom: 2px solid #f4f4f4;
 			display: inline-block;
 			margin-bottom: 0;
+
+            // Between 48em (768px) and 62em (992px)
+            @media screen and (min-width: 48em) and (max-width: 62em) {
+                @include font-size(50px);
+            }
+
+            // Above 34em (544px)
+            @include media(">sm") {
+                @include font-size(40px);
+                letter-spacing: 8px;
+            }
+            // Anything above 48em (768px)
+            @media screen and (min-width: 48em) {
+                @include font-size(38px);
+            }
+            // Anything above 62em (992px)
+            @media screen and (min-width: 62em) {
+                @include font-size(64px);
+                letter-spacing: 8px;
+            }
+
 		}
 
 		p {
 			text-transform: capitalize;
-			font-size: 25px;
+			@include font-size(13px)
 			font-family: 'Roboto', sans-serif;
 			color: rgba(255, 255, 255, 0.702);
-			line-height: 3;
+			line-height: 2;
 			text-align: center;
+
+            // Above 34em (544px)
+            @include media(">sm") {
+                @include font-size(25px);
+                line-height: 3;
+            }
+            // Anything above 48em (768px)
+            @media screen and (min-width: 48em) {
+                @include font-size(30px);
+                line-height: 2;
+            }
+            // Anything above 62em (992px)
+            @media screen and (min-width: 62em) {
+                @include font-size(32px);
+            }
 		}
 	}
 }
 
-@keyframes hue-rotate {
-  from {
-    -webkit-filter: hue-rotate(0);
-    -moz-filter: hue-rotate(0);
-    -ms-filter: hue-rotate(0);
-    filter: hue-rotate(0);
-  }
-  to {
-    -webkit-filter: hue-rotate(360deg);
-    -moz-filter: hue-rotate(360deg);
-    -ms-filter: hue-rotate(360deg);
-    filter: hue-rotate(360deg);
-  }
+.logo {
+    float: left;
+    margin-top: 1rem;
 }
-
-
-
 
 /* Side Menu */
 
@@ -75,7 +95,9 @@
     height: 100%;
     transform: translateX(250px);
     overflow-y: auto;
-    background: #222;
+    background: #232526; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #232526 , #414345); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #232526 , #414345); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     transition: all 0.9s ease 0s;
 }
 

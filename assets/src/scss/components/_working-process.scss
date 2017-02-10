@@ -13,6 +13,10 @@
 		padding-bottom: 20px;
 		margin-top: 0;
 		margin-bottom: 0;
+
+		@media screen and (max-width: 375px) { 
+		 	font-size: 30px;
+		}
 	}
 
 	h5 {
@@ -22,12 +26,16 @@
 		font-weight: bold;
 		padding-bottom: 69px;
 		margin-top: 1rem;
+
+		// Below 48em (768px)
+		@include media("<md") {
+			padding-bottom: 50px;
+		}
 	}
 
 	.square {
 		width: 270px;
 		height: 270px;
-		background-color: #10c6fc;
 		padding: 87px;
 		color: #fff;
 		text-transform: uppercase;
@@ -35,42 +43,38 @@
 		h5 {
 			color: #fff;
 		}
+
+		// Resolutions below 48em (768px)
+		@media screen and (max-width: 48em) { 
+		 	width: 100%;
+		 	margin-bottom: 20px;
+		}
+		// Below 62em (992px)
+		@include media("<lg") {
+			margin-bottom: 20px;
+		}
+		// Between 62em (992px) and 75em (1200px)
+		@media screen and (min-width: 62em) and (max-width: 75em) {
+			width: 230px;
+		}
+	}
+
+	.square1 {
+		background-color: #10c6fc;
 	}
 	.square2 {
-		width: 270px;
-		height: 270px;
 		background-color: #835aeb;
-		padding: 87px;
-		color: #fff;
-		text-transform: uppercase;
-
-		h5 {
-			color: #fff;
-		}
 	}
 	.square3 {
-		width: 270px;
-		height: 270px;
 		background-color: #002453;
-		padding: 87px;
-		color: #fff;
-		text-transform: uppercase;
-
-		h5 {
-			color: #fff;
-		}
 	}
 	.square4 {
-		width: 270px;
-		height: 270px;
 		background-color: #ff2b4a;
-		padding: 87px;
-		color: #fff;
-		text-transform: uppercase;
+	}
 
-		h5 {
-			color: #fff;
-		}
+	// Below 48em (768px)
+	@include media("<md") {
+		padding: 50px 0;
 	}
 }
 

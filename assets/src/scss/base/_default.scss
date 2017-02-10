@@ -1,7 +1,7 @@
 body {
-	@include primary-font(14px);
+	@include primary-font(16px);
 	color: $body-color;
 	hyphens: auto;
 	word-wrap: break-word;
 	background-color: $body-bg;
-	}
+}
