@@ -1,8 +1,9 @@
+/*** About Section ***/
+
 #hire-me {
 	padding-top: 119px;
 	font-family: 'Roboto', sans-serif;
 	background: #3494E6; /* fallback for old browsers */
-	background: -webkit-linear-gradient(to left, #3494E6 , #EC6EAD); /* Chrome 10-25, Safari 5.1-6 */
 	background: linear-gradient(to left, #3494E6 , #EC6EAD); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */   
 	
 	.desc {
@@ -39,7 +40,6 @@
 
 			&:hover {
 				background: #1e3c72; /* fallback for old browsers */
-				background: -webkit-linear-gradient(to left, #1e3c72 , #2a5298); /* Chrome 10-25, Safari 5.1-6 */
 				background: linear-gradient(to left, #1e3c72 , #2a5298); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 			}
 		}

@@ -1,13 +1,14 @@
 /*!
-Theme Name: Ultimos
-Theme URI: http://schoolmars.com
-Author: Saddam Azad 
-Author URI: http://schoolmars.com
+Theme Name: Hussain
+Theme URI: http://spark-bit.club/demo/paul
+Author: Hussain Sumrat 
+Author URI: http://spark-bit.club
 Version: 0.0.1
 Description: 
 Licensed Commercial 
-Copyright 2015-2015 Saddam Azad
+Copyright 2017-2017 Hussain Sumrat
 */
+/*** Home Screen ***/
 @import url("https://fonts.googleapis.com/css?family=Raleway|Roboto");
 @import url("https://fonts.googleapis.com/css?family=Raleway:600,700,800");
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,700");
@@ -17,25 +18,28 @@ Copyright 2015-2015 Saddam Azad
   height: 100vh; 
   background: #73c8a9;
   /* fallback for old browsers */
-  background: -webkit-linear-gradient(to left, #73c8a9, #373b44);
-  /* Chrome 10-25, Safari 5.1-6 */
   background: -webkit-gradient(linear, right top, left top, from(#73c8a9), to(#373b44));
   background: -webkit-linear-gradient(right, #73c8a9, #373b44);
   background:      -o-linear-gradient(right, #73c8a9, #373b44);
   background:         linear-gradient(to left, #73c8a9, #373b44);
 }
-#intro .intro {
-  padding: 13rem 0; 
+#intro .logo {
+  position: absolute; 
+  padding-top: 40px;
+  margin-left: 1rem;
+}
+#intro .intro-text {
+  margin-top: 30vh; 
   text-align: center;
 }
-#intro .intro .fa-bars {
+#intro .intro-text .fa-bars {
   color: #fff;
 }
-#intro .intro .btn {
+#intro .intro-text .btn {
   padding: .8rem 1rem;
   line-height: 1.4;
 }
-#intro .intro h1 {
+#intro .intro-text h1 {
   display: inline-block;
   padding-top: 10px;
   margin-bottom: 0; 
@@ -51,32 +55,32 @@ Copyright 2015-2015 Saddam Azad
   border-bottom: 2px solid #f4f4f4;
 }
 @media screen and (min-width: 48em) and (max-width: 62em) {
-  #intro .intro h1 {
+  #intro .intro-text h1 {
     font-size: 50px;
     font-size: 3.125rem;
   }
 }
 @media (min-width: 34.01em) {
-  #intro .intro h1 {
+  #intro .intro-text h1 {
     font-size: 40px;
     font-size: 2.5rem;
     letter-spacing: 8px;
   }
 }
 @media screen and (min-width: 48em) {
-  #intro .intro h1 {
+  #intro .intro-text h1 {
     font-size: 38px;
     font-size: 2.375rem;
   }
 }
 @media screen and (min-width: 62em) {
-  #intro .intro h1 {
+  #intro .intro-text h1 {
     font-size: 64px;
     font-size: 4rem;
     letter-spacing: 8px;
   }
 }
-#intro .intro p {
+#intro .intro-text p {
   font-family: 'Roboto', sans-serif;
   font-size: 13px;
   font-size: .8125rem;
@@ -86,29 +90,24 @@ Copyright 2015-2015 Saddam Azad
   text-transform: capitalize;
 }
 @media (min-width: 34.01em) {
-  #intro .intro p {
+  #intro .intro-text p {
     font-size: 25px;
     font-size: 1.5625rem;
     line-height: 3;
   }
 }
 @media screen and (min-width: 48em) {
-  #intro .intro p {
+  #intro .intro-text p {
     font-size: 30px;
     font-size: 1.875rem;
     line-height: 2;
   }
 }
 @media screen and (min-width: 62em) {
-  #intro .intro p {
+  #intro .intro-text p {
     font-size: 32px;
     font-size: 2rem;
   }
-}
-
-.logo {
-  float: left;
-  margin-top: 1rem;
 }
 
 /* Side Menu */
@@ -121,8 +120,6 @@ Copyright 2015-2015 Saddam Azad
   overflow-y: auto;
   background: #232526;
   /* fallback for old browsers */
-  background: -webkit-linear-gradient(to left, #232526, #414345);
-  /* Chrome 10-25, Safari 5.1-6 */
   background: -webkit-gradient(linear, right top, left top, from(#232526), to(#414345));
   background: -webkit-linear-gradient(right, #232526, #414345);
   background:      -o-linear-gradient(right, #232526, #414345);
@@ -135,6 +132,27 @@ Copyright 2015-2015 Saddam Azad
       -ms-transform: translateX(250px);
        -o-transform: translateX(250px);
           transform: translateX(250px);
+}
+#sidebar-wrapper .social-link {
+  position: absolute;
+  bottom: 0;
+  list-style: none;
+}
+#sidebar-wrapper .social-link h3 {
+  width: 76%;
+  margin-bottom: 25px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px; 
+  color: #999;
+  border-bottom: 1px solid #999;
+}
+#sidebar-wrapper .social-link li {
+  display: inline-block;
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+#sidebar-wrapper .social-link li img {
+  max-width: 40px;
 }
 
 .sidebar-nav {
@@ -185,7 +203,7 @@ Copyright 2015-2015 Saddam Azad
 
 #menu-toggle {
   position: fixed;
-  top: 0;
+  top: 30px;
   right: 0;
   z-index: 1;
   border: 2px solid #fff;
@@ -209,13 +227,12 @@ Copyright 2015-2015 Saddam Azad
   color: #fff;
 }
 
+/*** About Section ***/
 #hire-me {
   padding-top: 119px;
   font-family: 'Roboto', sans-serif;
   background: #3494e6;
   /* fallback for old browsers */
-  background: -webkit-linear-gradient(to left, #3494e6, #ec6ead);
-  /* Chrome 10-25, Safari 5.1-6 */
   background: -webkit-gradient(linear, right top, left top, from(#3494e6), to(#ec6ead));
   background: -webkit-linear-gradient(right, #3494e6, #ec6ead);
   background:      -o-linear-gradient(right, #3494e6, #ec6ead);
@@ -265,8 +282,6 @@ Copyright 2015-2015 Saddam Azad
 #hire-me .desc .btn-paul:hover {
   background: #1e3c72;
   /* fallback for old browsers */
-  background: -webkit-linear-gradient(to left, #1e3c72, #2a5298);
-  /* Chrome 10-25, Safari 5.1-6 */
   background: -webkit-gradient(linear, right top, left top, from(#1e3c72), to(#2a5298));
   background: -webkit-linear-gradient(right, #1e3c72, #2a5298);
   background:      -o-linear-gradient(right, #1e3c72, #2a5298);
@@ -284,6 +299,7 @@ Copyright 2015-2015 Saddam Azad
   }
 }
 
+/*** Working Process ***/
 #working-process {
   padding: 152px 0;
   font-family: 'Roboto', sans-serif;
@@ -362,6 +378,7 @@ Copyright 2015-2015 Saddam Azad
   }
 }
 
+/*** Experience & Education Section ***/
 #experience {
   padding: 124px 0;
   text-align: left;
@@ -557,7 +574,7 @@ ol li:last-child,
  * 
  */
 .body-container {
-  max-width: 1600px;
+  max-width: 100%;
 }
 
 footer {
@@ -580,9 +597,7 @@ footer .social-link ul li a {
 footer .social-link ul li a:hover {
   color: #673ab7;
   /* fallback for old browsers */
-  color: -webkit-linear-gradient(to left, #673ab7, #512da8);
-  /* Chrome 10-25, Safari 5.1-6 */
-  color:         linear-gradient(to left, #673ab7, #512da8);
+  color: linear-gradient(to left, #673ab7, #512da8);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 footer .social-link p {
@@ -590,6 +605,7 @@ footer .social-link p {
   text-transform: capitalize;
 }
 
+/*** POrtfolio ***/
 #portfolio {
   padding: 125px 0;
 }
@@ -618,8 +634,6 @@ footer .social-link p {
   padding-top: 65px;
   background: #34e89e;
   /* fallback for old browsers */
-  background: -webkit-linear-gradient(to left, #34e89e, #0f3443);
-  /* Chrome 10-25, Safari 5.1-6 */
   background: -webkit-gradient(linear, right top, left top, from(#34e89e), to(#0f3443));
   background: -webkit-linear-gradient(right, #34e89e, #0f3443);
   background:      -o-linear-gradient(right, #34e89e, #0f3443);
@@ -762,8 +776,6 @@ footer .social-link p {
   color: #fff; 
   background: #e96443;
   /* fallback for old browsers */
-  background: -webkit-linear-gradient(to left, #e96443, #904e95);
-  /* Chrome 10-25, Safari 5.1-6 */
   background: -webkit-gradient(linear, right top, left top, from(#e96443), to(#904e95));
   background: -webkit-linear-gradient(right, #e96443, #904e95);
   background:      -o-linear-gradient(right, #e96443, #904e95);
@@ -802,8 +814,6 @@ footer .social-link p {
 #contact .contact-form .btn-paul:hover {
   background: #1e3c72;
   /* fallback for old browsers */
-  background: -webkit-linear-gradient(to left, #1e3c72, #2a5298);
-  /* Chrome 10-25, Safari 5.1-6 */
   background: -webkit-gradient(linear, right top, left top, from(#1e3c72), to(#2a5298));
   background: -webkit-linear-gradient(right, #1e3c72, #2a5298);
   background:      -o-linear-gradient(right, #1e3c72, #2a5298);
@@ -822,8 +832,6 @@ footer .social-link p {
   color: #fff; 
   background: #2c3e50;
   /* fallback for old browsers */
-  background: -webkit-linear-gradient(to left, #2c3e50, #fd746c);
-  /* Chrome 10-25, Safari 5.1-6 */
   background: -webkit-gradient(linear, right top, left top, from(#2c3e50), to(#fd746c));
   background: -webkit-linear-gradient(right, #2c3e50, #fd746c);
   background:      -o-linear-gradient(right, #2c3e50, #fd746c);
@@ -855,8 +863,6 @@ footer .social-link p {
   color: rgba(255, 255, 255, .702);
   background: #2c3e50;
   /* fallback for old browsers */
-  background: -webkit-linear-gradient(to left, #2c3e50, #fd746c);
-  /* Chrome 10-25, Safari 5.1-6 */
   background: -webkit-gradient(linear, right top, left top, from(#2c3e50), to(#fd746c));
   background: -webkit-linear-gradient(right, #2c3e50, #fd746c);
   background:      -o-linear-gradient(right, #2c3e50, #fd746c);
@@ -876,8 +882,6 @@ footer .social-link p {
   padding: 50px 40px; 
   background: #2c3e50;
   /* fallback for old browsers */
-  background: -webkit-linear-gradient(to left, #2c3e50, #fd746c);
-  /* Chrome 10-25, Safari 5.1-6 */
   background: -webkit-gradient(linear, right top, left top, from(#2c3e50), to(#fd746c));
   background: -webkit-linear-gradient(right, #2c3e50, #fd746c);
   background:      -o-linear-gradient(right, #2c3e50, #fd746c);
