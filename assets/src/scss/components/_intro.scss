@@ -101,27 +101,30 @@
     background: linear-gradient(to left, #232526 , #414345); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     transition: all 0.9s ease 0s;
 
-    .social-link {
+    .social {
         position: absolute;
         bottom: 0;
-        list-style: none;
 
         h3 {
             font-family: 'Raleway', sans-serif;
             color: #999;
             border-bottom: 1px solid #999;
-            width: 76%;
-            margin-bottom: 25px;
+            width: 64%;
             font-size: 20px;
+            margin: 0 auto;
         }
+        .social-link {
+            list-style: none;
+            margin-top: 25px;
 
-        li {
-            display: inline-block;
-            margin-right: 20px;
-            margin-bottom: 10px;
+            li {
+                display: inline-block;
+                margin-right: 20px;
+                margin-bottom: 10px;
 
-            img {
-                max-width: 40px;
+                img {
+                    max-width: 40px;
+                }
             }
         }
     }

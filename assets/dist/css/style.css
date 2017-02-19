@@ -133,25 +133,28 @@ Copyright 2017-2017 Hussain Sumrat
        -o-transform: translateX(250px);
           transform: translateX(250px);
 }
-#sidebar-wrapper .social-link {
+#sidebar-wrapper .social {
   position: absolute;
   bottom: 0;
-  list-style: none;
 }
-#sidebar-wrapper .social-link h3 {
-  width: 76%;
-  margin-bottom: 25px;
+#sidebar-wrapper .social h3 {
+  width: 64%;
+  margin: 0 auto; 
   font-family: 'Raleway', sans-serif;
-  font-size: 20px; 
+  font-size: 20px;
   color: #999;
   border-bottom: 1px solid #999;
 }
-#sidebar-wrapper .social-link li {
+#sidebar-wrapper .social .social-link {
+  margin-top: 25px; 
+  list-style: none;
+}
+#sidebar-wrapper .social .social-link li {
   display: inline-block;
   margin-right: 20px;
   margin-bottom: 10px;
 }
-#sidebar-wrapper .social-link li img {
+#sidebar-wrapper .social .social-link li img {
   max-width: 40px;
 }
 
