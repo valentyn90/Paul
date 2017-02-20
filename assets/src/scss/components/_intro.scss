@@ -165,6 +165,8 @@
     height: 55px;
     font-size: 18px;
     line-height: 55px;
+    //padding-top: 30px;
+    display: inline-block;
 }
 
 .sidebar-nav > .sidebar-brand a {
@@ -198,6 +200,7 @@
 .fa-bars, 
 .fa-times {
     color: #fff;
+    display: block;
 }
 
 

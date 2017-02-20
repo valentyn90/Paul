@@ -190,6 +190,7 @@ Copyright 2017-2017 Hussain Sumrat
 }
 
 .sidebar-nav > .sidebar-brand {
+  display: inline-block; 
   height: 55px;
   font-size: 18px;
   line-height: 55px;
@@ -227,11 +228,12 @@ Copyright 2017-2017 Hussain Sumrat
 
 .fa-bars,
 .fa-times {
+  display: block; 
   color: #fff;
 }
 
 /*** About Section ***/
-#hire-me {
+#about {
   padding-top: 119px;
   font-family: 'Roboto', sans-serif;
   background: #3494e6;
@@ -242,7 +244,7 @@ Copyright 2017-2017 Hussain Sumrat
   background:         linear-gradient(to left, #3494e6, #ec6ead);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
-#hire-me .desc h4 {
+#about .desc h4 {
   margin-bottom: 43px; 
   font-size: 18px;
   font-weight: bold;
@@ -250,13 +252,13 @@ Copyright 2017-2017 Hussain Sumrat
   color: #fff;
   text-align: left;
 }
-#hire-me .desc p {
+#about .desc p {
   font-size: 16px;
   line-height: 1.751;
   color: rgba(255, 255, 255, .502);
   text-align: left;
 }
-#hire-me .desc .btn-paul {
+#about .desc .btn-paul {
   padding: 17px 68px;
   margin-top: 68px;
   font-family: 'Roboto', sans-serif;
@@ -273,16 +275,16 @@ Copyright 2017-2017 Hussain Sumrat
           transition: background-color 300ms ease-in;
 }
 @media (max-width: 33.99em) {
-  #hire-me .desc .btn-paul {
+  #about .desc .btn-paul {
     margin-top: 40px;
   }
 }
 @media screen and (min-width: 48em) {
-  #hire-me .desc .btn-paul {
+  #about .desc .btn-paul {
     margin-top: 38px;
   }
 }
-#hire-me .desc .btn-paul:hover {
+#about .desc .btn-paul:hover {
   background: #1e3c72;
   /* fallback for old browsers */
   background: -webkit-gradient(linear, right top, left top, from(#1e3c72), to(#2a5298));
@@ -292,12 +294,12 @@ Copyright 2017-2017 Hussain Sumrat
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 @media screen and (min-width: 48em) {
-  #hire-me img {
+  #about img {
     height: 67vh;
   }
 }
 @media (max-width: 33.99em) {
-  #hire-me {
+  #about {
     padding: 40px 0;
   }
 }
@@ -633,7 +635,7 @@ footer .social-link p {
   text-align: center;
 }
 
-#testimonial-section {
+#testimonial {
   padding-top: 65px;
   background: #34e89e;
   /* fallback for old browsers */
