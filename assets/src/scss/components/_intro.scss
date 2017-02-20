@@ -162,11 +162,11 @@
 }
 
 .sidebar-nav > .sidebar-brand {
-    height: 55px;
-    font-size: 18px;
-    line-height: 55px;
-    //padding-top: 30px;
     display: inline-block;
+    line-height: 0;
+    padding-bottom: 20px;
+    padding-top: 10px;
+    padding-left: 10px;
 }
 
 .sidebar-nav > .sidebar-brand a {
@@ -187,6 +187,10 @@
     border-radius: 0;
 }
 
+#menu-close {
+    padding-left: 0;
+}
+
 #sidebar-wrapper.active {
     right: 250px;
     width: 250px;
@@ -194,7 +198,7 @@
 }
 
 .toggle {
-    margin: 7px 7px 0 0;
+    margin: 13px 7px 0 0;
 }
 
 .fa-bars, 

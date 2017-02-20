@@ -190,10 +190,11 @@ Copyright 2017-2017 Hussain Sumrat
 }
 
 .sidebar-nav > .sidebar-brand {
-  display: inline-block; 
-  height: 55px;
-  font-size: 18px;
-  line-height: 55px;
+  display: inline-block;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  padding-left: 10px; 
+  line-height: 0;
 }
 
 .sidebar-nav > .sidebar-brand a {
@@ -214,6 +215,10 @@ Copyright 2017-2017 Hussain Sumrat
   border-radius: 0;
 }
 
+#menu-close {
+  padding-left: 0;
+}
+
 #sidebar-wrapper.active {
   right: 250px;
   width: 250px;
@@ -223,7 +228,7 @@ Copyright 2017-2017 Hussain Sumrat
 }
 
 .toggle {
-  margin: 7px 7px 0 0;
+  margin: 13px 7px 0 0;
 }
 
 .fa-bars,
